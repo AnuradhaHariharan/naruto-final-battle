@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assests/icons8-naruto.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>最終決戦 (Final Battle)</h1>
+        <div class="game-area">
+            <div class="player">
+                <h2>Select Your Shinobi</h2>
+                <img id="player-img" src="assests/sasuke.jpg" alt="Player Character Image">
+                <select id="player-select">
+                    <option value="sasuke">Sasuke</option>
+                    <option value="hinata">Hinata</option>
+                    <option value="gaara">Gaara</option>
+                    <option value="orochimaru">Orochimaru</option>
+                    <option value="naruto">Naruto</option>
+                    <option value="itachi">Itachi</option>
+                    <option value="hashirama">Hashirama</option>
+                    <option value="jiraya">Jiraya</option>
+                    <option value="shisui">Shisui</option>
+                    <option value="pain">Pain</option>
+                    <option value="kakashi">Kakashi</option>
+                    <option value="sakura">Sakura</option>
+                </select>
+            </div>
+            <div class="opponent">
+                <h2>Shinobi Selection</h2>
+                <div id="opponent-character"></div>
+                <img id="opponent-img" src="assests/naruto.jpg" alt="Opponent Character Image">
+                <button id="battle-btn" style="display: block; margin-left: 30px;">Shinobi Battle Begin</button>
+            </div>
+        </div>
+        <div id="result"></div>
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <div id="match-count">
+            Matches Won: <span id="matches-won">0</span><br>
+            Matches Lost: <span id="matches-lost">0</span>
+        </div>
+        <button id="reset-btn">Reset</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
